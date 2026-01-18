@@ -1,5 +1,9 @@
 # Inked | Premium Tattoo Studio Website
 
+[![Deploy with Vercel](https://vercel.com/button)](https://inked-premium-tattoo-studio-website.vercel.app/)
+
+[**Live Demo**](https://inked-premium-tattoo-studio-website.vercel.app/)
+
 A high-end, visually immersive web experience for **Inked**, a premier tattoo studio. This project showcases a modern, dark-themed aesthetic designed to highlight the artist's portfolio and streamline the client booking process.
 
 ## 🎨 Project Overview
