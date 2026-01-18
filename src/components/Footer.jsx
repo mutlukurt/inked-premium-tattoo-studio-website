@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <p>&copy; 2024 Inked Tattoo Studio. All rights reserved.</p>
+                    <p>&copy; 2026 Mutlu Kurt. Licensed under MIT.</p>
                 </div>
             </div>
         </footer>
