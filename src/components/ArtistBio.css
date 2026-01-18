@@ -1,0 +1,100 @@
+.artist-bio {
+    background-color: var(--color-surface);
+}
+
+.artist-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.artist-image {
+    position: relative;
+}
+
+.artist-image img {
+    border-radius: 4px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.artist-image:hover img {
+    filter: grayscale(0%);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    /* Circle or keep square? Let's do square for rugged look */
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.experience-badge .years {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.experience-badge .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.artist-info h2 {
+    font-size: 1rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.artist-info h3 {
+    font-size: 2.5rem;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+}
+
+.artist-info p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+}
+
+.artist-specialties {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.artist-specialties span {
+    border: 1px solid var(--color-border);
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .artist-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .experience-badge {
+        right: 0;
+        bottom: 0;
+    }
+}
