@@ -3,6 +3,7 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -19,15 +20,26 @@ const Navbar = () => {
         };
     }, [scrolled]);
 
+    const toggleMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+    };
+
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="container navbar-content">
                 <a href="#" className="logo">INKED</a>
-                <ul className="nav-links">
-                    <li><a href="#artist">Artist</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#booking" className="btn btn-primary">Book Now</a></li>
+
+                <div className={`hamburger ${mobileMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </div>
+
+                <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
+                    <li><a href="#artist" onClick={() => setMobileMenuOpen(false)}>Artist</a></li>
+                    <li><a href="#portfolio" onClick={() => setMobileMenuOpen(false)}>Portfolio</a></li>
+                    <li><a href="#pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a></li>
+                    <li><a href="#booking" className="btn btn-primary" onClick={() => setMobileMenuOpen(false)}>Book Now</a></li>
                 </ul>
             </div>
         </nav>
