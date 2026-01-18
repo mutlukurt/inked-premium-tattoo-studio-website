@@ -18,7 +18,7 @@ This application serves as the digital storefront for a master tattoo artist. It
     *   **Size**: Interactive slider input (cm).
     *   **Style**: Multiplier logic for Black & Grey vs. Full Color.
 *   **Booking Integration**: A streamlined form for clients to secure appointments directly, pre-filled with their estimated service details.
-*   **Performance Optimized**: All visual assets are high-resolution yet optimized WebP format to ensure rapid load times without compromising quality.
+*   **Performance Optimized**: High-quality visual assets optimized for rapid load times without compromising visual fidelity.
 *   **Responsive Design**: Fully adaptive layout that maintains its premium feel across mobile, tablet, and desktop devices.
 
 ## 🛠️ Technology Stack
@@ -65,7 +65,7 @@ Follow these instructions to set up the project locally.
 
 ```
 src/
-├── assets/          # Optimized WebP images and static resources
+├── assets/          # High-quality images and static resources
 ├── components/      # Reusable UI components
 │   ├── Navbar       # Sticky navigation with scroll effects
 │   ├── Hero         # Cinematic landing section
