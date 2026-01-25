@@ -12,7 +12,7 @@ This application serves as the digital storefront for a master tattoo artist. It
 
 ### Key Features
 
-*   **Premium Visual Identity**: A sophisticated dark mode interface with gold accents (`#d4af37`), featuring glassmorphism effects and smooth transitions to evoke a luxury studio atmosphere.
+*   **Premium Visual Identity**: A sophisticated dark mode interface with gold accents (`#d4af37`) and smooth transitions to evoke a luxury studio atmosphere.
 *   **Dynamic Portfolio System**: An interactive gallery showcasing diverse tattoo styles (Realism, Neo-Traditional, Fine Line, Geometric) across various placements (Back, Arm, Leg, Chest, Face, etc.). Includes category filtering for easy exploration.
 *   **Smart Pricing Calculator**: A custom utility that provides clients with instant price estimates based on:
     *   **Size**: Interactive slider input (cm).
